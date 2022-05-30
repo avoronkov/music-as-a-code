@@ -162,7 +162,7 @@ b = seq [ D3 D3 D3 D3 D3 G3 G2 ]
 <p><code>44100 Hz</code> - частота дискретизации (sample rate)</p>
 </li>
 <li data-marpit-fragment="2">
-<p><code>16 bit,</code> - &quot;глубина&quot; звука</p>
+<p><code>16 bit</code> - &quot;глубина&quot; звука</p>
 </li>
 <li data-marpit-fragment="3">
 <p><code>stereo</code> - число каналов (2)</p>
@@ -174,7 +174,7 @@ b = seq [ D3 D3 D3 D3 D3 G3 G2 ]
 <pre><code class="language-Go"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">type</span> Wave <span class="hljs-keyword">interface</span> {                                                                                           
 	<span class="hljs-comment">// t - time in seconds</span>
 	<span class="hljs-comment">// Value is in [-1, 1] range</span>
-	<span class="hljs-comment">// math.NaN() - is then end of the sound.</span>
+	<span class="hljs-comment">// math.NaN() - is the end of the sound.</span>
 	Value(t <span class="hljs-keyword">float64</span>, ctx *notes.Ctx) <span class="hljs-keyword">float64</span>
 }
 </span></span></foreignObject></svg></code></pre>
